@@ -16,6 +16,10 @@
   margin-top: 50px;
 }
 
+#rating{
+  width: 50px;
+}
+
 .input-field {
   display: flex;
 }

@@ -6,8 +6,8 @@ class ShowCake extends React.Component {
   constructor(props) {
     super(props);
     this.state = {rating: '', comment: ''}
-    console.log(this.state);
-    console.log(this.props);
+    // console.log(this.state);
+    // console.log(this.props);
   }
 
   onInputChange = (event) => {
@@ -41,19 +41,13 @@ class ShowCake extends React.Component {
         </div>
         <form onSubmit={this.onSubmit}>
           <div className="input-field">
-              <Input type="select" label="Rate this cake" name="rating" value={this.state.rating} onChange={this.onInputChange}>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </Input>
-            </div>
-            <div className="input-field">
-              <Input type="textarea" label="Comment" name="comment" value={this.state.comment} onChange={this.onInputChange} />
-            </div>
-            <button type="submit" className="waves-effect waves-light grey darken-1 btn">Submit Rating</button>
-          </form>
+            <Input type="textarea" label="Comment" name="comment" value={this.state.comment} onChange={this.onInputChange} />
+          </div>
+          <div className="input-field">
+            <Input type="number" id="rating" label="Rate this cake" name="rating"  defaultValue="5" min="1" max="5" onChange={this.onInputChange} />
+          </div>
+          <button type="submit" className="waves-effect waves-light grey darken-1 btn">Submit Rating</button>
+        </form>
       </div>
     )
   }

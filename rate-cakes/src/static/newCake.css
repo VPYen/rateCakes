@@ -13,7 +13,7 @@ input {
   color: white;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border-bottom: 1px solid maroon !important;
   box-shadow: 0 1px 0 0 maroon !important;
 }

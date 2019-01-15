@@ -33,7 +33,6 @@ class App extends React.Component  {
     // console.log(response.cakes);
     this.setState({
       cakes: response.cakes,
-      selectedCake : response.cakes[0]
     });
   };
 
