@@ -12,19 +12,20 @@ class App extends React.Component  {
   componentDidMount() {
     this.getCakes();
   }
+  componentDidUpdate() {
+    this.getCakes();
+  }
 
   onFormSubmit = async (title, url) => {
     console.log(title, url);
     let resp = await Service.postNew(title, url);
     console.log(resp);
-    // this.getCakes();
   };
 
   onRatingSubmit = async (rating, id) => {
     console.log(rating);
     let resp = await Service.postReview(rating, id);
     console.log(resp);
-    // this.getCakes();
   };
 
   getCakes = async () => {
