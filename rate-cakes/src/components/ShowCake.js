@@ -5,7 +5,7 @@ import "../static/showCake.css";
 class ShowCake extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {rating: '', comment: ''}
+    this.state = {rating: '5', comment: ''}
     // console.log(this.state);
     // console.log(this.props);
   }
@@ -20,23 +20,23 @@ class ShowCake extends React.Component {
   }
 
   render() {
-    let reviewAvg = 0;
+    let ratingAvg = 0;
     if(!this.props.cake) {
       return <div></div>
     }
-    if (this.props.cake.reviews) {
-      for(let i = 0; i < this.state.cake.reviews.length; i++) {
-        reviewAvg += this.state.cake.reviews[i].rating;
+    if (this.props.cake.ratings.length) {
+      for(let i = 0; i < this.props.cake.ratings.length; i++) {
+        ratingAvg += this.props.cake.ratings[i].rating;
       }
-      reviewAvg = reviewAvg / this.state.cake.reviews.length;
+      ratingAvg = ratingAvg / this.props.cake.ratings.length;
     }else {
-      reviewAvg = "N/A"
+      ratingAvg = "Not rated"
     }
     return  (
       <div className="row showCake">
         <div className="col">
           <h4 className="thisCake">{this.props.cake.title}</h4>
-          <h5>Rating Average: {reviewAvg}</h5>
+          <h5>Rating Average: {ratingAvg}</h5>
           <img src={this.props.cake.url} alt="CakeIMG" />
         </div>
         <form onSubmit={this.onSubmit}>

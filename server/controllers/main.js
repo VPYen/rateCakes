@@ -44,6 +44,8 @@ module.exports = {
     });
   },
   addRating: function(req, res) {
+    // console.log(req.body);
+    // console.log(req.params);
     var rating = new Rating();
     rating.rating = req.body.rating;
     rating.comment = req.body.comment;

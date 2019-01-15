@@ -23,9 +23,9 @@ const Service = {
         return error;
       });
   },
-  postReview(review, comment, id) {
+  postReview(rating, comment, id) {
     axios.post(baseUrl+`/cakes/rating/${id}`, {
-        review: review,
+        rating: rating,
         comment: comment,
       })
       .then = ((response) => {
