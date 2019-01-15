@@ -46,8 +46,8 @@ class App extends React.Component  {
       <div className="container">
         <h1 className="title">Rate My Cake</h1>
         <NewCake onFormSubmit={this.onFormSubmit} />
-        <ShowCake cake={this.state.selectedCake} onRatingSubmit={this.onRatingSubmit} />
         <CakeList cakes={this.state.cakes} onCakeSelect={this.onCakeSelect} />
+        <ShowCake cake={this.state.selectedCake} onRatingSubmit={this.onRatingSubmit} />
       </div>
     )
   }

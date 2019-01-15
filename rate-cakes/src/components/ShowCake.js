@@ -21,6 +21,7 @@ class ShowCake extends React.Component {
 
   render() {
     let ratingAvg = 0;
+    let comments = [];
     if(!this.props.cake) {
       return <div></div>
     }
@@ -29,15 +30,25 @@ class ShowCake extends React.Component {
         ratingAvg += this.props.cake.ratings[i].rating;
       }
       ratingAvg = ratingAvg / this.props.cake.ratings.length;
+      comments = this.props.cake.ratings.map(rating =>  {
+        return (
+          <p className="comment">"{rating.comment}" - Rating: {rating.rating} </p>
+        )
+      })
     }else {
       ratingAvg = "Not rated"
+      comments = "<div>No Comments</div>"
     }
     return  (
       <div className="row showCake">
         <div className="col">
           <h4 className="thisCake">{this.props.cake.title}</h4>
-          <h5>Rating Average: {ratingAvg}</h5>
           <img src={this.props.cake.url} alt="CakeIMG" />
+          <h5>Rating Average: {ratingAvg}</h5>
+          <h5>Comments:</h5>
+            <div className="row comments">
+              {comments}
+            </div>
         </div>
         <form onSubmit={this.onSubmit}>
           <div className="input-field">

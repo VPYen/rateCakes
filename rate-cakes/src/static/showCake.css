@@ -13,7 +13,7 @@
 }
 
 .showCake {
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
 #rating{
@@ -22,4 +22,16 @@
 
 .input-field {
   display: flex;
+}
+
+.comment {
+  margin-left: 30px;
+}
+
+.comments {
+  height: 200px;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  justify-content: flex-start;
 }
