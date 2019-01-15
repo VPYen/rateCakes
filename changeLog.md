@@ -6,4 +6,4 @@
 
 15JAN2019
 ----------
-* Added rendering for ShowCake comments.
+* Added rendering for comments in ShowCake component.
