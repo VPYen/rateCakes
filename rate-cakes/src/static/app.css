@@ -1,0 +1,13 @@
+.title{
+  text-align: center;
+  font-family: script;
+  color: hotpink;
+}
+
+.container {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  justify-content: center;
+}

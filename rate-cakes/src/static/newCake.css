@@ -1,0 +1,29 @@
+.row.newCake {
+  display: flex;
+  justify-content: center;
+}
+
+.newCakeHead{
+  text-align: center;
+  font-family: monospace;
+  color: red;
+}
+
+input {
+  color: white;
+}
+
+input:focus {
+  border-bottom: 1px solid maroon !important;
+  box-shadow: 0 1px 0 0 maroon !important;
+}
+
+.btn {
+  color: pink;
+  float: right;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: bolder;
+  font-family: cursive;
+  border: 2px solid maroon;
+}

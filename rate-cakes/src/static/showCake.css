@@ -1,0 +1,21 @@
+.material-icons {
+  color: yellow;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.thisCake {
+  color: hotpink;
+  text-shadow: 0 0 8px red;
+}
+
+.showCake {
+  margin-top: 50px;
+}
+
+.input-field {
+  display: flex;
+}
