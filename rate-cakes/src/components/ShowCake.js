@@ -36,13 +36,13 @@ class ShowCake extends React.Component {
         )
       })
     }else {
-      ratingAvg = "Not rated"
-      comments = "<div>No Comments</div>"
+      ratingAvg = <div style={{color: "red"}}>Not rated</div>
+      comments = <div className="comment" style={{color: "red"}}>No Comments</div>
     }
     return  (
       <div className="row showCake">
         <div className="col">
-          <h4 className="thisCake">{this.props.cake.title}</h4>
+          <h4>{this.props.cake.title}</h4>
           <img src={this.props.cake.url} alt="CakeIMG" />
           <h5>Rating Average: {ratingAvg}</h5>
           <h5>Comments:</h5>

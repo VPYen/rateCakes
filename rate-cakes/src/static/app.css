@@ -1,13 +1,37 @@
+/* * {
+  outline: 1px solid pink;
+} */
+
 .title{
   text-align: center;
-  font-family: script;
+  font-family: script, serif;
   color: hotpink;
 }
 
 .container {
+  width: 100%;
   display: flex;
   margin-top: 10px;
   margin-bottom: 50px;
   flex-direction: column;
   justify-content: center;
+}
+
+hr {
+  width: 70%;
+  margin-top: 5%;
+  box-shadow: 0px 0px 8px 0px hotpink;
+}
+
+.componentRow {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.componentCol {
+  margin: 2%;
+}
+
+#comp1 {
+  margin-left: 20%;
 }

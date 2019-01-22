@@ -12,7 +12,7 @@ const CakeList = ({cakes, onCakeSelect}) => {
       />
     )
   });
-  return <div className="row cakeListOuter"><div className="cakeListInner">{renderedList}</div></div>
+  return <div className="row cakeListOuter"><h5>Select a cake</h5><div className="cakeListInner">{renderedList}</div></div>
 };
 
 export default CakeList;

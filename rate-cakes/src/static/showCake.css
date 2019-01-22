@@ -1,19 +1,30 @@
-.material-icons {
-  color: yellow;
+.showCake {
+  margin-top: 5%;
 }
 
-.row {
+.showCake {
   display: flex;
-  justify-content: center;
+  justify-content: flext-start;
+  width: 625px;
 }
 
-.thisCake {
+.showCake > .col {
+  width: 35%;
+}
+
+.showCake h4 {
+  width: 100%;
   color: hotpink;
   text-shadow: 0 0 8px red;
 }
 
-.showCake {
-  margin-top: 15px;
+.showCake h5 {
+  width: 100%;
+}
+
+.showCake img {
+  height: 35%;
+  width: 120%;
 }
 
 #rating{
@@ -30,8 +41,13 @@
 
 .comments {
   height: 200px;
+  width: 250px;
   display: flex;
   overflow-y: auto;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.showCake form {
+  margin-left: 5%;
 }

@@ -46,12 +46,18 @@ class App extends React.Component  {
       <div className="container">
         <h1 className="title">Rate My Cake</h1>
         <NewCake onFormSubmit={this.onFormSubmit} />
-        <CakeList cakes={this.state.cakes} onCakeSelect={this.onCakeSelect} />
-        <ShowCake cake={this.state.selectedCake} onRatingSubmit={this.onRatingSubmit} />
+        <hr />
+        <div className="row componentRow">
+          <div id="comp1" className="col componentCol">
+            <CakeList cakes={this.state.cakes} onCakeSelect={this.onCakeSelect} />
+          </div>
+          <div id="comp2" className="col componentCol">
+            <ShowCake cake={this.state.selectedCake} onRatingSubmit={this.onRatingSubmit} />
+          </div>
+        </div>
       </div>
     )
   }
-
 }
 
 export default App;
