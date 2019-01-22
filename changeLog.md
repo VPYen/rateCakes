@@ -7,3 +7,7 @@
 15JAN2019
 ----------
 * Added rendering for comments in ShowCake component.
+
+22Jan2019
+---------
+* Modified components for styling purposes (Centered CakeList Component and ShowCake Component).
